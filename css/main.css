@@ -24,9 +24,8 @@
   /* layout */
   .product-grid{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,368px), 1fr));
     grid-template-rows: auto auto auto auto auto;
-    gap: 0.2rem;
     font-family: sans-serif;
     background-color: var(--_color);
     padding: 1em;
@@ -145,6 +144,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end; 
+    flex-wrap: wrap;
   }
 
   .footer__left {
