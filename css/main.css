@@ -24,11 +24,12 @@
   /* layout */
   .product-grid{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%,368px), 1fr));
+    grid-template-columns: repeat(auto-fILL, minmax(min(100%,368px), 1fr));
     grid-template-rows: auto auto auto auto auto;
-    font-family: sans-serif;
+    font-family: sans-serif;  
     background-color: var(--_color);
     padding: 1em;
+    /* max-width: 1300PX; */
   }
 
   .product{
@@ -69,6 +70,7 @@
     font-size: 1.1rem;
     margin: 0 0 10px 0;
     line-height: 1.3;
+    font-weight: bolder;
   }
 
   .product__rating{
@@ -118,6 +120,11 @@
 
   .product__specs{
     font-weight: lighter;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;    
+    -webkit-box-orient: vertical;  
+    overflow: hidden;         
+    text-overflow: ellipsis;  
   }
 
   .product--side-info{
